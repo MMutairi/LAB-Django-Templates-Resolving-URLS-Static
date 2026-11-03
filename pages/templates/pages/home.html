@@ -1,0 +1,23 @@
+
+{% extends "pages/base.html" %}
+
+{% block title %}Google{% endblock %}
+
+{% block content %}
+
+<section class="search-container">
+    <h1>Google</h1>
+
+    <form action="https://www.google.com/search" method="GET">
+        <input
+            type="search"
+            name="q"
+            placeholder="Search Google"
+            required
+        >
+
+        <button type="submit">Google Search</button>
+    </form>
+</section>
+
+{% endblock %}
