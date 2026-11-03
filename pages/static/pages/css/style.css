@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #202124;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    padding: 20px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+
+main {
+    flex: 1;
+}
+
+/* Google Homepage */
+
+.search-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 130px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.google-logo {
+    display: block;
+    width: 272px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+/* Search Bar */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 584px;
+    height: 48px;
+    margin: 0 auto;
+    padding: 0 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: transparent;
+}
+
+.search-icon {
+    color: #9aa0a6;
+    font-size: 22px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-box input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-image {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Search Button */
+
+.search-buttons {
+    margin-top: 30px;
+}
+
+.search-buttons button {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-buttons button:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Terms Page */
+
+.terms-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 24px;
+    line-height: 1.7;
+}
+
+.terms-container h1 {
+    margin-bottom: 24px;
+}
+
+.terms-container h2 {
+    margin: 30px 0 10px;
+}
+
+/* Footer */
+
+footer {
+    background: #f2f2f2;
+    padding: 18px 30px;
+    color: #70757a;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 16px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .search-container {
+        margin-top: 100px;
+        padding: 0 16px;
+    }
+
+    .google-logo {
+        width: 200px;
+    }
+
+    .search-box {
+        gap: 8px;
+    }
+
+    .search-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        padding: 16px;
+    }
+}

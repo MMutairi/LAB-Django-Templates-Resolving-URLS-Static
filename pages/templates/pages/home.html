@@ -1,23 +1,54 @@
 
 {% extends "pages/base.html" %}
+{% load static %}
 
 {% block title %}Google{% endblock %}
 
 {% block content %}
 
 <section class="search-container">
-    <h1>Google</h1>
+
+    <img
+        src="{% static 'pages/images/google-logo.png' %}"
+        alt="Google Logo"
+        class="google-logo"
+    >
 
     <form action="https://www.google.com/search" method="GET">
-        <input
-            type="search"
-            name="q"
-            placeholder="Search Google"
-            required
-        >
 
-        <button type="submit">Google Search</button>
+        <div class="search-box">
+
+            <span class="material-symbols-outlined search-icon">
+                search
+            </span>
+
+            <input
+                type="search"
+                name="q"
+                aria-label="Search Google"
+                required
+            >
+
+            <img
+                src="{% static 'pages/images/mircophone.png' %}"
+                alt="Voice search icon"
+                class="search-image"
+            >
+
+            <img
+                src="{% static 'pages/images/camera.png' %}"
+                alt="Google Lens icon"
+                class="search-image"
+            >
+
+        </div>
+
+        <div class="search-buttons">
+            <button type="submit">Google Search</button>
+        </div>
+
     </form>
+
 </section>
 
 {% endblock %}
