@@ -189,3 +189,212 @@ footer {
         padding: 16px;
     }
 }
+
+/* ===================================
+   Google Terms of Service Page
+=================================== */
+
+/* Navigation */
+
+.terms-header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.terms-top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.terms-top-nav a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}
+
+.terms-top-nav a:hover {
+    text-decoration: underline;
+}
+
+.terms-top-nav .apps-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5f6368;
+}
+
+.apps-link .material-symbols-outlined {
+    font-size: 28px;
+}
+
+.terms-top-nav .terms-signin {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 27px;
+    border-radius: 5px;
+}
+
+.terms-top-nav .terms-signin:hover {
+    background-color: #1765cc;
+    text-decoration: none;
+}
+
+/* Page layout */
+
+.terms-page {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+/* Illustration */
+
+.terms-hero {
+    width: 100%;
+    max-width: 950px;
+    margin: 42px auto 45px;
+    padding: 0 15px;
+}
+
+.terms-illustration {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Terms text */
+
+.terms-article {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.terms-article h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.terms-article h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 34px 0 20px;
+}
+
+.terms-article h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 28px 0 14px;
+}
+
+.terms-article p {
+    margin-bottom: 20px;
+}
+
+.terms-article a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.terms-article a:hover {
+    text-decoration: underline;
+}
+
+.terms-article .terms-meta {
+    margin-bottom: 13px;
+}
+
+.terms-article .country-version {
+    margin-bottom: 28px;
+}
+
+.terms-article .terms-introduction {
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+.terms-list {
+    padding-left: 32px;
+    margin-bottom: 24px;
+}
+
+.terms-list li {
+    margin-bottom: 12px;
+}
+
+.terms-article .terms-section-title {
+    font-size: 32px;
+    margin-top: 45px;
+}
+
+.terms-article address {
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+/* Responsive Terms Page */
+
+@media (max-width: 768px) {
+
+    .terms-header {
+        padding: 12px 16px;
+    }
+
+    .terms-top-nav {
+        gap: 14px;
+    }
+
+    .terms-top-nav .terms-signin {
+        padding: 10px 16px;
+    }
+
+    .terms-hero {
+        margin: 40px auto 30px;
+        padding: 0 12px;
+    }
+
+    .terms-article {
+        padding: 0 22px;
+        font-size: 15px;
+    }
+
+    .terms-article h1 {
+        font-size: 28px;
+    }
+
+    .terms-article h2 {
+        font-size: 22px;
+    }
+
+    .terms-article .terms-introduction {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .terms-top-nav {
+        gap: 10px;
+    }
+
+    .terms-top-nav a {
+        font-size: 12px;
+    }
+
+    .terms-article h1 {
+        font-size: 25px;
+    }
+
+    .terms-article {
+        padding: 0 16px;
+    }
+}
